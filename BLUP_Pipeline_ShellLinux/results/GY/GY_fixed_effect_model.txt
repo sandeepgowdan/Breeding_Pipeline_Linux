@@ -1,0 +1,43 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: data[[trait]] ~ GEN + (1 | ENV)
+   Data: data
+
+REML criterion at convergence: 519.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.9325 -0.6022 -0.0027  0.6255  2.4951 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ ENV      (Intercept) 0.7124   0.8440  
+ Residual             0.1648   0.4059  
+Number of obs: 415, groups:  ENV, 14
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)   2.60368    0.23411  14.84702  11.121 1.35e-08 ***
+GENG10       -0.13246    0.08858 392.00010  -1.495    0.136    
+GENG2         0.14047    0.08858 392.00010   1.586    0.114    
+GENG3         0.35167    0.08858 392.00010   3.970 8.55e-05 ***
+GENG4         0.03824    0.08858 392.00010   0.432    0.666    
+GENG5        -0.06715    0.08914 392.00254  -0.753    0.452    
+GENG6        -0.05728    0.08914 392.00254  -0.643    0.521    
+GENG7         0.14149    0.08972 392.00477   1.577    0.116    
+GENG8         0.38997    0.08914 392.00254   4.375 1.56e-05 ***
+GENG9        -0.09348    0.08858 392.00010  -1.055    0.292    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+       (Intr) GENG10 GENG2  GENG3  GENG4  GENG5  GENG6  GENG7  GENG8 
+GENG10 -0.189                                                        
+GENG2  -0.189  0.500                                                 
+GENG3  -0.189  0.500  0.500                                          
+GENG4  -0.189  0.500  0.500  0.500                                   
+GENG5  -0.188  0.497  0.497  0.497  0.497                            
+GENG6  -0.188  0.497  0.497  0.497  0.497  0.494                     
+GENG7  -0.187  0.494  0.494  0.494  0.494  0.491  0.491              
+GENG8  -0.188  0.497  0.497  0.497  0.497  0.494  0.494  0.491       
+GENG9  -0.189  0.500  0.500  0.500  0.500  0.497  0.497  0.494  0.497
